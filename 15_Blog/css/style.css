@@ -1,0 +1,386 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    min-height: 100vh;
+    position: relative;
+}
+
+main{
+    margin-bottom: 250px;
+}
+
+/* NAVBAR */
+
+#logo{
+    position: absolute;
+    top: 10px;
+    left: 9.5%;
+}
+
+#logo img{
+    width: 80px;
+    margin-block: -8px;
+
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFD384;
+    padding: 20px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+#navbar li{
+    margin: 0 10px;
+    padding: 5px;
+}
+
+#navbar .nav-link{
+    color: #8512af;
+    text-decoration: none;
+    transform: .5s;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#navbar .nav-link:hover{
+    color: #318cd3;
+}
+
+/* HOME */
+#title-container {
+    min-width: 500px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  #title-container h1 {
+    font-size: 50px;
+    color: #8512af;
+  }
+  
+  #title-container p {
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #318cd3;
+  }
+  
+  #posts-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .post-box:first-child {
+    min-width: 100%;
+  }
+  
+  .post-box {
+    flex: 1 1 0;
+    margin: 0 1%;
+    margin-bottom: 20px;
+  }
+  
+  .post-box:nth-child(3) {
+    margin: 0 1%;
+  }
+  
+  .post-box img {
+    width: 100%;
+  }
+
+  .post-box .post-title{
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .post-box .post-title a{
+    color: #8512af;
+    transition: 0.5s;
+  }
+
+  .post-box .post-title a:hover{
+    color: #318cd3;
+  }
+
+  .post-box .post-description {
+    color: #666;
+  }
+  
+  .tags-container {
+    margin-top: 10px;
+  }
+  
+  .tags-container a {
+    font-size: 14px;
+    color: #333;
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  /* POST */
+#post-container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "main sidebar";
+    grid-gap: 10px;
+    padding-top: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 250px;
+  }
+  
+  .content-container {
+    grid-area: main;
+  }
+  
+  #main-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #8512af;
+  }
+  
+  #post-description {
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+  
+  .post-content {
+    line-height: 1.8;
+    margin: 10px 0;
+  }
+  
+  .img-container {
+    margin-bottom: 30px;
+  }
+  
+  .img-container img {
+    width: 60%;
+  }
+  
+  /* POST ASIDE */
+  .nav-container {
+    grid-area: sidebar;
+  }
+  
+  #tags-title, #categorias-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: #8512af;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    font-weight: 300;
+  }
+  
+  #tag-list, #categorias-list {
+    list-style: none;
+  }
+  
+  #tag-list li, #categorias-list li {
+    margin-bottom: 10px;
+  }
+  
+  #tag-list a, #categorias-list a {
+    color: #318cd3;
+    transition: .5s;
+  }
+  
+  #tag-list a:hover, #categorias-list a:hover {
+    color: #8512af;
+  }
+
+  .p-content {
+    line-height: 1.8;
+    margin: 10px 0;
+    margin-top: 20px;
+  }
+
+  /* SOBRE */
+
+  #sobre-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #8512af;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    font-weight: 300;
+  }
+
+  #missao-container img {
+    height: 90px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  #missao-container{
+    width: 30%;
+    float: left;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  #visao-container img {
+    height: 120px;
+    margin-bottom: -5px;
+    margin-top: -15px;  
+  }
+
+  #visao-container{
+    width: 30%;
+    float: left;
+    margin-left: 70px;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  #valores-container img {
+    height: 100px;  
+  }
+  
+  #valores-container{
+    width: 30%;
+    float: right;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  /* CONTATOS */
+
+  #contatos-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #8512af;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    font-weight: 300;
+  }
+
+  #email-container{
+    width: 30%;
+    float: left;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  #email-container img {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  #telefone-container{
+    width: 30%;
+    float: left;
+    margin-top: 50px;
+    margin-left: 70px;
+    text-align: center;
+  }
+
+  #telefone-container img {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  #chat-container{
+    width: 30%;
+    float: right;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  #chat-container img {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  /* CATEGORIAS */
+
+  #categorias-container {
+    min-width: 500px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  #categorias-container h1 {
+    font-size: 50px;
+    color: #8512af;
+  }
+
+/* FOOTER */
+
+  footer{
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      background-color: #FFD384;
+      color: #8512af;
+      font-weight: bold;
+      padding: 50px 0;
+  }
+
+/* MOBILE */
+@media(max-width: 480px) {
+
+    /* HOME */
+    header {
+      width: 100%;
+    }
+  
+    #logo {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      left: 0;
+      width: 50px;
+    }
+  
+    #navbar {
+      display: none;
+    }
+  
+    #title-container {
+      min-width: 100%;
+      margin-top: 20px;
+    }
+  
+    #posts-container {
+      margin-top: 20px;
+    }
+  
+    .post-box {
+      flex: 100% 1 0;
+      padding: 15px;
+      margin: 0;
+    }
+  
+    /* POST */
+    #post-container {
+      grid-template-columns: 100%;
+      padding: 15px;
+      grid-template-areas: "main"
+      "sidebar";
+    }
+  
+    .img-container img {
+      width: 100%;
+    }
+
+    #categorias-container {
+      min-width: 100%;
+      margin-top: 20px;
+    }
+}
